@@ -14,7 +14,7 @@ if [ -d "$directory" ]; then
             filename=$(basename -- "$file")
             
             temp_file=$(mktemp)
-
+            lsbsteg encode -i "$file" -o "$temp_file"
             # Append filename to the result file
             echo "$filename" >> "$directory"/res/tes.txt
 
