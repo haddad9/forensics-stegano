@@ -21,7 +21,7 @@ if [ -d "$directory" ]; then
                 # Perform "cat" operation on the file
                 # put the name of the file into var
                 filename=$(basename -- "$file")
-
+                cat "$filename"
                 # Add your existing code here
                 steghide extract -sf "images"/"$filename" -xf "$directory"/res/"$filename".steghide.txt -p ""
                 lsbsteg decode -i "$file" -o "$directory"/res/"$filename".lsbsteg.txt
