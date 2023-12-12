@@ -127,6 +127,7 @@ git clone https://github.com/0xcomposure/FFTStegPic
 echo "## Stegano ##"
 pipx install stegano && pipx ensurepath
 
+
 echo "## stegseek ##"
 wget https://github.com/RickdeJager/stegseek/releases/download/v0.6/stegseek_0.6-1.deb && dpkg -i stegseek_0.6-1.deb && rm stegseek_0.6-1.deb
 
