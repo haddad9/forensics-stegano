@@ -25,7 +25,7 @@ if [ -d "$directory" ]; then
             stegolsb "$file" "$directory"/res/"$filename".stegolsb.txt
             stegopvd "$file" "$directory"/res/"$filename".stegopvd.txt
             paddinganograph "$file" "$directory"/res/"$filename".paddinganograph.txt
-            png-parser "$file" "$directory"/res/"$filename".png-parser.txt
+            png-parser "$file" "$directory"/res/"$filename".png-parser.txt 
         fi
     done
 else
