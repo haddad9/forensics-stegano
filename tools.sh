@@ -118,6 +118,7 @@ git clone https://github.com/solusipse/spectrology && cd spectrology && sed -i '
 echo "## openstego ##"
 wget https://github.com/syvaidya/openstego/releases/download/openstego-0.8.4/openstego_0.8.4-1_all.deb && dpkg -i openstego_0.8.4-1_all.deb && rm openstego_0.8.4-1_all.deb
 
+
 echo "## stegsnow ##"
 sudo apt-get install stegsnow
 
