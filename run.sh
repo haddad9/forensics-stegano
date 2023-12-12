@@ -27,7 +27,7 @@ if [ -d "$directory" ]; then
                 lsbsteg decode -i "$file" -o "$directory"/res/"$filename".lsbsteg.txt
                 openstego extract -sf "$file" -p "" -xd "$directory"/res/"$filename".openstego.txt
                 stegextract "$file"  -p "" -P "$directory"/res/"$filename".stegextract.txt
-                stegpy extract -sf "$file" -p "" -xf "$directory"/res/"$filename".stegpy.txt
+                stegpy "$file" gg>> "$directory"/res/"$filename".stegpy.txt
                 stegseek "$file" "$directory"/res/"$filename".stegseek.txt
                 outguess -r "$file" "$directory"/res/"$filename".outguess.txt
                 zsteg "$file" > "$directory"/res/"$filename".zsteg.txt
