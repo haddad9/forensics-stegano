@@ -26,7 +26,7 @@ if [ -d "$directory" ]; then
                 steghide extract -sf "images"/"$filename" -xf "$directory"/res/"$filename".steghide.txt -p ""
                 lsbsteg decode -i "$file" -o "$directory"/res/"$filename".lsbsteg.txt
                 openstego extract -sf "$file" -p "" -xd "$directory"/res/"$filename".openstego.txt
-                stegextract "$file" -xf -sf -z -p "" -P "$directory"/res/"$filename".stegextract.txt
+                stegextract "$file"  -p "" -P "$directory"/res/"$filename".stegextract.txt
                 stegpy extract -sf "$file" -p "" -xf "$directory"/res/"$filename".stegpy.txt
                 stegseek "$file" "$directory"/res/"$filename".stegseek.txt
                 outguess -r "$file" "$directory"/res/"$filename".outguess.txt
